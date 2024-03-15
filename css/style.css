@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap");
+html {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  max-width: 1920px;
+}
+.header .headerMenu {
+  display: flex;
+}
+.header .headerMenuLink {
+  margin: 0px 16px;
+}
+
+.top {
+  overflow: hidden;
+}
+.top .mainVisual {
+  display: flex;
+  height: 400px;
+  width: 100vw;
+  margin-top: 110px;
+  justify-content: center;
+}
+.top .mainVisual .mainTitle {
+  width: 550px;
+  height: 450px;
+  background: url("../data/mainTitle.svg") no-repeat;
+  background-position: top;
+  margin-top: 100px;
+  margin-right: 64px;
+  margin-left: 32px;
+  background-size: contain;
+}
+.top .mainVisual .mainBoard {
+  width: 560px;
+  height: 560px;
+  margin-right: 32px;
+  background: url("../data/boradgameItem.png") no-repeat;
+  background-size: contain;
+}
+.top .grass :nth-child(1) {
+  height: 50px;
+  background-color: #88A63B;
+}
+.top .grass :nth-child(2) {
+  height: 24px;
+  background-color: #8C6D49;
+}
+.top .grass :nth-child(3) {
+  height: 100px;
+  background-color: #A27A4B;
+}
+.top .grass :nth-child(4) {
+  height: 20px;
+  background-color: #8E714E;
+}
+
+.about .cardsOne {
+  display: flex;
+  justify-content: center;
+}
+.about .cardsOne .cardsOneContents {
+  margin-top: 64px;
+}
+.about .cardsOne .cardsOneContents .pop {
+  height: 300px;
+  width: 450px;
+  background: url("/data/cardpop.png") no-repeat;
+  background-size: contain;
+  margin-left: 350px;
+}
+.about .cardsOne .cardsOneContents .cards {
+  height: 650px;
+  width: 650px;
+  margin-top: -270px;
+  background: url("../data/cardgroup.png") no-repeat;
+  background-size: contain;
+}
+.about .cardsOne .cardsStyle {
+  width: 25%;
+  height: 800px;
+}
+.about .cardsTwo {
+  display: flex;
+  justify-content: center;
+}
+.about .cardsTwo .cardsOneContents {
+  margin-top: -150px;
+}
+.about .cardsTwo .cardsOneContents .pop {
+  height: 300px;
+  width: 450px;
+  margin-left: -80px;
+  background: url("../data/cardpop2.png") no-repeat;
+  background-size: contain;
+}
+.about .cardsTwo .cardsOneContents .cards {
+  height: 650px;
+  width: 650px;
+  margin-top: -130px;
+  background: url("../data/cardgroup3.png") no-repeat;
+  background-size: contain;
+}
+.about .cardsTwo .cardsStyle {
+  width: 25%;
+  height: 800px;
+}
+
+.play {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  background-color: #6A4923;
+  margin-top: -300px;
+  padding-top: 64px;
+  padding-bottom: 100px;
+  color: white;
+}
+.play .playTitle {
+  z-index: 10;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+.play .playTitleText {
+  margin: 16px 0px 32px 0px;
+}
+.play .playVideo {
+  height: 580px;
+  width: 80%;
+  max-width: 728px;
+  max-height: 480px;
+  border-radius: 32px;
+  background-color: rgb(235, 235, 235);
+}
+.play::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  height: 64px;
+  width: 100vw;
+  border-radius: 80% 80% 0 0;
+  background-color: #B98A54;
+}
+.play::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 64px;
+  width: 100vw;
+  border-radius: 80% 80% 0 0;
+  background-color: #6A4923;
+}
+
+.playsoil {
+  position: absolute;
+  z-index: 10;
+  height: 64px;
+  width: 100vw;
+  margin-top: -30px;
+  border-radius: 80% 80% 0 0;
+  background-color: #B98A54;
+}
+.playsoil::after {
+  content: "";
+  position: absolute;
+  bottom: -32px;
+  z-index: 11;
+  height: 64px;
+  width: 100vw;
+  margin-top: -30px;
+  border-radius: 80% 80% 0 0;
+  background-color: white;
+}
+
+.title {
+  font-size: 32px;
+  color: #79A912;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 16px;
+  color: #2A3038;
+}
+
+.case {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.case {
+  margin-top: 100px;
+}
+.case .caseText {
+  margin-top: 16px;
+}
+.case .caseList {
+  margin: 64px 64px 0 64px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.case .caseList .caseListContents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  margin: 0 32px 32px 32px;
+  background: #EFEEEE;
+  width: 320px;
+  height: 456px;
+}
+.case .caseList .caseListContents__image {
+  height: 50%;
+  width: 100%;
+  border-radius: 16px;
+  background: url(../data/caseImage.png) no-repeat;
+  background-size: cover;
+}
+.case .caseList .caseListContents__title {
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2A3038;
+}
+.case .caseList .caseListContents__text {
+  margin-top: 32px;
+}
+.case .caseList .caseListContents__button {
+  width: 80%;
+  height: 48px;
+  background-color: #79A912;
+  color: white;
+  text-align: center;
+  margin-top: 32px;
+  border-radius: 50px;
+  box-shadow: 0px 6px #55770C;
+}
+
+.method {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.method .methodText {
+  margin-top: 16px;
+}
+
+.footer {
+  margin-top: 128px;
+}
+.footer .footerGlass :nth-child(1) {
+  height: 50px;
+  background-color: #88A63B;
+}
+.footer .footerGlass :nth-child(2) {
+  height: 24px;
+  background-color: #8C6D49;
+}
+.footer .footerGlass :nth-child(3) {
+  height: 100px;
+  background-color: #A27A4B;
+}
+.footer .footerGlass :nth-child(4) {
+  height: 20px;
+  background-color: #8E714E;
+}/*# sourceMappingURL=style.css.map */
