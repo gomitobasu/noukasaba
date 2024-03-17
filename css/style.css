@@ -47,11 +47,74 @@ body {
   background-size: contain;
 }
 .top .mainVisual .mainBoard {
+  z-index: 99;
   width: 560px;
   height: 560px;
   margin-right: 32px;
   background: url("../data/boradgameItem.png") no-repeat;
   background-size: contain;
+}
+.top .illust {
+  z-index: -1;
+  width: 1 --vw;
+  bottom: 285px;
+  margin-bottom: -23px;
+  margin-top: 125px;
+  margin-left: 32px;
+  z-index: -3;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.top .illust :nth-child(1) {
+  height: 90px;
+  width: 100px;
+  margin-top: -12px;
+  background: url(../data/illust1.png) no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.top .illust :nth-child(2) {
+  height: 80px;
+  width: 100px;
+  background: url(../data/illust2.png) no-repeat;
+  background-size: contain;
+}
+.top .illust :nth-child(3) {
+  height: 80px;
+  width: 100px;
+  margin-top: -45px;
+  background: url(../data/illust3.png) no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.top .illust :nth-child(4) {
+  height: 80px;
+  width: 100px;
+  margin-top: -25px;
+  background: url(../data/illust4.png) no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.top .illust :nth-child(5) {
+  height: 80px;
+  width: 100px;
+  margin-top: -45px;
+  background: url(../data/illust5.png) no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.top .illust :nth-child(6) {
+  height: 80px;
+  width: 100px;
+  background: url(../data/illust6.png) no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.top .grass {
+  z-index: 2;
 }
 .top .grass :nth-child(1) {
   height: 50px;
@@ -200,9 +263,10 @@ body {
 .text {
   font-size: 16px;
   color: #2A3038;
+  margin-top: 16px;
 }
 
-.case {
+.group {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,9 +274,6 @@ body {
 
 .case {
   margin-top: 100px;
-}
-.case .caseText {
-  margin-top: 16px;
 }
 .case .caseList {
   margin: 64px 64px 0 64px;
@@ -268,10 +329,36 @@ body {
   margin-top: 16px;
 }
 
+.contact {
+  margin-top: 100px;
+}
+
 .footer {
   margin-top: 128px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footerLogo {
+  height: 80px;
+  width: 400px;
+  margin-left: 32px;
+  background: url(../data/noukaLogo.svg) no-repeat;
+  background-size: contain;
+}
+.footer .footerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 32px;
+}
+.footer .footerText__contents {
+  margin-top: 8px;
+}
+.footer .footerGlass {
+  position: relative;
 }
 .footer .footerGlass :nth-child(1) {
+  position: relative;
   height: 50px;
   background-color: #88A63B;
 }
@@ -286,4 +373,61 @@ body {
 .footer .footerGlass :nth-child(4) {
   height: 20px;
   background-color: #8E714E;
+}
+.footer .illust {
+  z-index: 50;
+  height: 200px;
+  width: 100vw;
+  margin-top: 100px;
+  margin-bottom: -85px;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .illust :nth-child(1) {
+  height: 90px;
+  width: 100px;
+  margin-top: -12px;
+  background: url(../data/illust1.png) no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.footer .illust :nth-child(2) {
+  height: 80px;
+  width: 100px;
+  background: url(../data/illust2.png) no-repeat;
+  background-size: contain;
+}
+.footer .illust :nth-child(3) {
+  height: 80px;
+  width: 100px;
+  margin-top: -45px;
+  background: url(../data/illust3.png) no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.footer .illust :nth-child(4) {
+  height: 80px;
+  width: 100px;
+  margin-top: -25px;
+  background: url(../data/illust4.png) no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.footer .illust :nth-child(5) {
+  height: 80px;
+  width: 100px;
+  margin-top: -45px;
+  background: url(../data/illust5.png) no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.footer .illust :nth-child(6) {
+  height: 80px;
+  width: 100px;
+  background: url(../data/illust6.png) no-repeat;
+  background-size: contain;
+  background-position: bottom;
 }/*# sourceMappingURL=style.css.map */
