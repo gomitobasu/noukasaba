@@ -340,7 +340,7 @@ body {
 }
 .case .caseList .caseListContents__button.waiwai {
   background-color: rgb(161, 161, 161);
-  box-shadow: 0px 6px #7a7a7a;
+  box-shadow: none;
 }
 
 .method {
