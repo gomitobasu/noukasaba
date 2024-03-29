@@ -33,7 +33,9 @@ $colorBlack: #2A3038;
   #menuButton.on span:nth-of-type(3) {
     transform: translateY(-12px) rotate(-45deg);
   }
-
+  .headerLogo{
+    display: none;
+  }
   .headerMenu{
     display: none;
   }
