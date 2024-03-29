@@ -110,10 +110,6 @@ $colorBlack: #2A3038;
         background-size: contain;
       }
     }
-    .cardsStyle{
-      width: 25%;
-      height: 800px;
-    }
   }
   .cardsTwo{
     display: flex;
@@ -135,10 +131,6 @@ $colorBlack: #2A3038;
         background-size: contain;
       }
     }
-    .cardsStyle{
-
-      height: 800px;
-    }
   }
 }
 .play{
@@ -153,22 +145,18 @@ $colorBlack: #2A3038;
   padding-top: 64px;
   padding-bottom: 100px;
   color: white;
-  .playTitle{
-    z-index: 10;
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
-  }
-  .playTitleText{
-    margin: 16px 0px 32px 0px;
-  }
   .playVideo{
-    height: 580px;
-    width: 80%;
-    max-width: 728px;
-    max-height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
     border-radius: 32px;
-    background-color: rgb(235, 235, 235);
+    background-color: #ebebeb;
+    .youtube{
+      min-width: 80vw;
+      min-height: 315px;
+    }
   }
   &::before{
     content: '';

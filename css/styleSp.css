@@ -104,10 +104,6 @@
     background: url("../data/cardgroup.png") no-repeat;
     background-size: contain;
   }
-  .about .cardsOne .cardsStyle {
-    width: 25%;
-    height: 800px;
-  }
   .about .cardsTwo {
     display: flex;
     justify-content: center;
@@ -129,9 +125,6 @@
     background: url("../data/cardgroup3.png") no-repeat;
     background-size: contain;
   }
-  .about .cardsTwo .cardsStyle {
-    height: 800px;
-  }
   .play {
     position: relative;
     display: flex;
@@ -145,22 +138,18 @@
     padding-bottom: 100px;
     color: white;
   }
-  .play .playTitle {
-    z-index: 10;
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
-  }
-  .play .playTitleText {
-    margin: 16px 0px 32px 0px;
-  }
   .play .playVideo {
-    height: 580px;
-    width: 80%;
-    max-width: 728px;
-    max-height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
     border-radius: 32px;
-    background-color: rgb(235, 235, 235);
+    background-color: #ebebeb;
+  }
+  .play .playVideo .youtube {
+    min-width: 80vw;
+    min-height: 315px;
   }
   .play::before {
     content: "";
