@@ -345,13 +345,13 @@ body{
   }
 }
 
-.method{
+.contact{
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .methodText{
+  &__text{
     margin: 16px 16px 0px 16px;
   }
 }

@@ -20,32 +20,32 @@ menu.addEventListener("click", () => {
     });
   
     // 要素にアニメーションを紐づける
-    lax.addElements('.cardsOne', {
+    lax.addElements('.cardsList', {
       scrollY: {
         translateX: [
-        ['elInY', 'elHeight/1.2'],
+        ['elInY', 'elHeight/1.5'],
         [-300, 0]
         ],
         opacity:[
-        ['elInY', 'elHeight/1.2'],
+        ['elInY', 'elHeight/1.5'],
         [0, 1]
         ],
         rotate:[
-            ['elInY', 'elHeight/1.2'],
+            ['elInY', 'elHeight/1.5'],
             [-15, 0]
             ]
       }
     });
-    lax.addElements('.cardsTwo', {
+    lax.addElements('.boardsList', {
         scrollY: {
-          opacity: [
-          ['elInY', 'elCenterY-elHeight/1.5'],
-          [0, 1]
-          ],
-          rotate:[
-            ['elInY', 'elHeight/2'],
-            [-15, 0]
-            ]
+            rotate:[
+                ['elInY', 'elCenterY-elHeight/4'],
+                [15, 0]
+            ],
+        opacity: [
+        ['elInY', 'elCenterY-elHeight/4'],
+        [0, 1]
+        ],
         }
       });
   }

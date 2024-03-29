@@ -343,13 +343,13 @@ body {
   box-shadow: none;
 }
 
-.method {
+.contact {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.method .methodText {
+.contact__text {
   margin: 16px 16px 0px 16px;
 }
 
