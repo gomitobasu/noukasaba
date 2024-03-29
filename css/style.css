@@ -19,11 +19,15 @@ body {
   padding: 16px 32px;
   max-width: 1920px;
 }
+.header #menuButton {
+  display: none;
+}
 .header .headerMenu {
   display: flex;
 }
 .header .headerMenuLink {
   margin: 0px 16px;
+  cursor: pointer;
 }
 
 .top {
@@ -47,7 +51,7 @@ body {
   background-size: contain;
 }
 .top .mainVisual .mainBoard {
-  z-index: 99;
+  z-index: 49;
   width: 560px;
   height: 560px;
   margin-right: 32px;
@@ -285,12 +289,13 @@ body {
 .case .caseList .caseListContents {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   border-radius: 16px;
   margin: 0 32px 32px 32px;
   background: #EFEEEE;
   width: 320px;
-  height: 456px;
+  height: 500px;
 }
 .case .caseList .caseListContents__image {
   height: 50%;
@@ -299,6 +304,11 @@ body {
   background: url(../data/caseImage.png) no-repeat;
   background-size: cover;
 }
+.case .caseList .caseListContents__image.nanairo {
+  background: url(../data/caseImage02.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .case .caseList .caseListContents__title {
   margin-top: 32px;
   font-size: 24px;
@@ -306,15 +316,20 @@ body {
   color: #2A3038;
 }
 .case .caseList .caseListContents__text {
-  margin-top: 32px;
+  margin-top: 16px;
+  padding: 0 16px;
+  line-height: 32px;
 }
 .case .caseList .caseListContents__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   height: 48px;
   background-color: #79A912;
   color: white;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 16px;
   border-radius: 50px;
   box-shadow: 0px 6px #55770C;
 }
@@ -375,7 +390,7 @@ body {
   background-color: #8E714E;
 }
 .footer .illust {
-  z-index: 50;
+  z-index: 30;
   height: 200px;
   width: 100vw;
   margin-top: 100px;

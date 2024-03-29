@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>ノウカサバイバー</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleSp.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
 	<script src="lax.min.js"></script>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -17,17 +18,21 @@
   <!-- Body Section -->
   <body> 
     <header class="header">
+      <div id="menuButton">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="headerLogo">ノウカサバイバー</div>
-      <menu class="headerMenu">
-        <li class="headerMenuLink">ノウカサバイバーとは</li>
-        <li class="headerMenuLink">あそびかた</li>
-        <li class="headerMenuLink">実施事例</li>
-        <li class="headerMenuLink">実施方法</li>
-        <li class="headerMenuLink">お問い合わせ</li>
-      </menu>
+      <nav class="headerMenu" id="menu">
+        <a class="headerMenuLink" href="#top">ノウカサバイバーとは</a>
+        <a class="headerMenuLink" href="#play">あそびかた</a>
+        <a class="headerMenuLink" href="#case">実施事例</a>
+        <a class="headerMenuLink" href="#contact">お問い合わせ</a>
+      </nav>
     </header>
 
-    <div class="top">
+    <div class="top" name="top">
       <div class="mainVisual">
         <div class="mainTitle" alt="ノウカサバイバー、みんなで楽しく農場経営！遊んで学ぶ、みどりの食料システム戦略。ターベル研究所、プレイ時間20分、対象年齢9才～、人数1~3人"></div>
         <div class="mainBoard"></div>
@@ -62,30 +67,29 @@
       </div>
   </div>
   </div>
-  <div class="play">
+  <div class="play" id="play">
     <div class="playTitle">ノウカサバイバー</div>
       <h1 class="playTitleText">遊び方</h1>
       <div class="playVideo"></div>
   </div>
   <div class="playsoil"></div>
 
-  <div class="case group">
+  <div class="case group" id="case">
     <h1 class="caseTitle title">実施事例</h1>
     <p class="caseText text">ノウカサバイバーを使用した事例です。</p>
     <div class="caseList">
         <div class="caseListContents">
-          <div class="caseListContents__image"></div>
+          <div class="caseListContents__image katayama"></div>
           <h1 class="caseListContents__title">片山学園初等科</h1>
-          <p class="caseListContents__text">○○にて実施しました。</p>
-          <button class="caseListContents__button">もっと見る</button>
+          <p class="caseListContents__text">2023年12月14日に、小学生5年生を対象に、90分間実施しました。</p>
+          <a class="caseListContents__button" href="https://katayamagakuen.com/news/5206.php" target="_blank">もっと見る</a>
         </div>
         <div class="caseListContents">
-          <div class="caseListContents__image"></div>
-          <h1 class="caseListContents__title">片山学園初等科</h1>
-          <p class="caseListContents__text">○○にて実施しました。</p>
-          <button class="caseListContents__button">もっと見る</button>
+          <div class="caseListContents__image nanairo"></div>
+          <h1 class="caseListContents__title">なないろBASE School Children</h1>
+          <p class="caseListContents__text">学童保育のイベントととして、一時間程度自由に遊んでいただきました。</p>
         </div>
-        <div class="caseListContents">
+        <div class="caseListContents waiwai">
           <div class="caseListContents__image"></div>
           <h1 class="caseListContents__title">片山学園初等科</h1>
           <p class="caseListContents__text">○○にて実施しました。</p>
@@ -100,7 +104,7 @@
     <p class="methodText text">用途に合わせて柔軟に対応します。</p>
   </div>
 
-  <div class="contact group">
+  <div class="contact group" id="contact">
     <h1 class="methodTitle title">お問い合わせ</h1>
     <p class="methodText text">授業・イベント実施などのお問い合わせはこちらから。</p>
   </div>

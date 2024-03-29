@@ -1,0 +1,215 @@
+$colorGreen: #79A912;
+$colorBlack: #2A3038;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+@media (max-width: 768px) {
+
+.header{
+  #menuButton {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    z-index: 51;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+  }
+  #menuButton span {
+    display: block;
+    background-color: $colorGreen;
+    width: 36px;
+    height: 2px;
+    transition: all 0.5s ease;
+  }
+  #menuButton.on span:nth-of-type(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+  #menuButton.on span:nth-of-type(2) {
+    transform: scale(0);
+  }
+  #menuButton.on span:nth-of-type(3) {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+
+  .headerMenu{
+    display: none;
+  }
+  .headerMenu.on{
+    position: fixed;
+    display: flex;
+    background-color: white;
+    height: 120vh;
+    width: 100vw;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    z-index: 50;
+    padding: 30% 0 0 32px;
+    .headerMenuLink{
+      padding: 48px 0 0 0;
+    }
+  }
+}
+
+.top{
+  overflow: hidden;
+  .mainVisual{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    .mainTitle{
+      width: 80vw;
+      height: 450px;
+      background: url("../data/mainTitle.svg") no-repeat;
+      background-position: top;
+      margin: 0;
+      margin-top: 100px;
+      background-size: contain;
+    }
+    .mainBoard{
+      height: 150vh;
+      width: 80vw;
+      margin: 0;
+      margin-top: 15px;
+      background: url("../data/boradgameItem.png") no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  .illust{
+    margin-top: 80px;
+  }
+}
+
+.about{
+  overflow: hidden;
+  .cardsOne{
+    display: flex;
+    justify-content: center;
+    .cardsOneContents{
+      margin-top: 64px;
+      .pop{
+        height: 300px;
+        width: 350px;
+        background: url("/data/cardpop.png") no-repeat;
+        background-size: contain;
+        margin-left: 150px;
+      }
+      .cards{
+        height: 650px;
+        width: 590px;
+        margin-top: -270px;
+        margin-left: -50px;
+        background: url("../data/cardgroup.png") no-repeat;
+        background-size: contain;
+      }
+    }
+    .cardsStyle{
+      width: 25%;
+      height: 800px;
+    }
+  }
+  .cardsTwo{
+    display: flex;
+    justify-content: center;
+    .cardsOneContents{
+      margin-top: -150px;
+      .pop{
+        height: 300px;
+        width: 350px;
+        margin: 0 auto;
+        background: url("../data/cardpop2.png") no-repeat;
+        background-size: contain;
+      }
+      .cards{
+        height: 650px;
+        width: 550px;
+        margin-top: -130px;
+        background: url("../data/cardgroup3.png") no-repeat;
+        background-size: contain;
+      }
+    }
+    .cardsStyle{
+
+      height: 800px;
+    }
+  }
+}
+.play{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  background-color: #6A4923;
+  margin-top: -300px;
+  padding-top: 64px;
+  padding-bottom: 100px;
+  color: white;
+  .playTitle{
+    z-index: 10;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .playTitleText{
+    margin: 16px 0px 32px 0px;
+  }
+  .playVideo{
+    height: 580px;
+    width: 80%;
+    max-width: 728px;
+    max-height: 480px;
+    border-radius: 32px;
+    background-color: rgb(235, 235, 235);
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    top: -32px;
+    height: 64px;
+    width: 100vw;
+    border-radius: 80% 80% 0 0;
+    background-color: #B98A54;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 64px;
+    width: 100vw;
+    border-radius: 80% 80% 0 0;
+    background-color: #6A4923;
+  }
+
+}
+
+.playsoil{
+  position: absolute;
+  z-index: 10;
+  height: 64px;
+  width: 100vw;
+  margin-top: -30px;
+  border-radius: 80% 80% 0 0;
+  background-color: #B98A54;
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: -32px;
+    z-index: 11;
+    height: 64px;
+    width: 100vw;
+    margin-top: -30px;
+    border-radius: 80% 80% 0 0;
+    background-color: white;
+  }
+}
+}
