@@ -142,7 +142,6 @@ body {
   justify-content: center;
 }
 .about .cardsOne .cardsOneContents {
-  overflow-x: hidden;
   margin-top: 64px;
 }
 .about .cardsOne .cardsOneContents .pop {

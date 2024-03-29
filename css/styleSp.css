@@ -85,6 +85,7 @@
   }
   .about {
     overflow: hidden;
+    width: 100vw;
   }
   .about .cardsOne {
     display: flex;
