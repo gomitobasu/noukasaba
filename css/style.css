@@ -353,6 +353,19 @@ body {
 .contact__text {
   margin: 16px 16px 0px 16px;
 }
+.contact__mailText {
+  margin: 0px 8px 0px 0px;
+}
+.contact__mail {
+  display: flex;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  transition: background-color 0.5s ease;
+  border-radius: 5px;
+  padding: 16px;
+  align-items: center;
+  margin-top: 32px;
+}
 
 .contact {
   margin-top: 100px;

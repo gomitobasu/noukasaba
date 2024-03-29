@@ -355,6 +355,19 @@ body{
   &__text{
     margin: 16px 16px 0px 16px;
   }
+  &__mailText{
+    margin: 0px 8px 0px 0px;
+  }
+  &__mail{
+    display: flex;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+    padding: 16px;
+    align-items: center;
+    margin-top: 32px;
+  }
 }
 
 .contact{

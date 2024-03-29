@@ -1,5 +1,6 @@
 const menuButton = document.getElementById("menuButton");
 const menu = document.getElementById("menu");
+const copy = document.getElementById("copy");
 
 menuButton.addEventListener("click", () => {
   menuButton.classList.toggle("on");
@@ -9,6 +10,19 @@ menu.addEventListener("click", () => {
     menuButton.classList.toggle("on");
     menu.classList.toggle("on");
   });
+
+copy.addEventListener("click", () => {
+    if(navigator.clipboard == undefined) {
+        window.clipboardData.setData('Text', "kunonodesign@gmail.com");
+    } else {
+        navigator.clipboard.writeText("kunonodesign@gmail.com");
+    }
+    copy.style.backgroundColor = "#d9d9d9";
+    setTimeout(() => {
+        copy.style.backgroundColor = "#f3f3f3";
+        console.log("timeout");
+      }, "200");
+});
 
   window.onload = function () {
     //lax.jsを初期化
