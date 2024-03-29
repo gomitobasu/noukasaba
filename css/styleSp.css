@@ -93,7 +93,6 @@
   .about .cardsOne .cardsOneContents .pop {
     height: 300px;
     width: 350px;
-    background: url("/data/cardpop.png") no-repeat;
     background-size: contain;
     margin-left: 150px;
   }
