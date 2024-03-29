@@ -23,15 +23,15 @@ menu.addEventListener("click", () => {
     lax.addElements('.cardsList', {
       scrollY: {
         translateX: [
-        ['elInY', 'elHeight/1.5'],
-        [-300, 0]
+        ['elInY', 'elCenterY-elHeight/3'],
+        [-50, 0]
         ],
         opacity:[
-        ['elInY', 'elHeight/1.5'],
+        ['elInY', 'elCenterY-elHeight/3'],
         [0, 1]
         ],
         rotate:[
-            ['elInY', 'elHeight/1.5'],
+            ['elInY', 'elCenterY-elHeight/3'],
             [-15, 0]
             ]
       }
@@ -39,11 +39,11 @@ menu.addEventListener("click", () => {
     lax.addElements('.boardsList', {
         scrollY: {
             rotate:[
-                ['elInY', 'elCenterY-elHeight/4'],
+                ['elInY', 'elCenterY-elHeight/3'],
                 [15, 0]
             ],
         opacity: [
-        ['elInY', 'elCenterY-elHeight/4'],
+        ['elInY', 'elCenterY-elHeight/3'],
         [0, 1]
         ],
         }

@@ -206,18 +206,19 @@ body{
   color: white;
   .playTitle{
     z-index: 10;
-    color: white;
+    color: #6A4923;
     font-size: 32px;
+    background-color: white;
+    padding: 16px 32px;
+    border-radius: 16px;
     font-weight: bold;
   }
-  .playTitleText{
-    margin: 16px 0px 32px 0px;
-  }
   .playVideo{
-    height: 580px;
-    width: 80%;
-    max-width: 728px;
-    max-height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 80px;
     border-radius: 32px;
     background-color: rgb(235, 235, 235);
   }
