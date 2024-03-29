@@ -305,12 +305,13 @@ body {
   background-size: cover;
 }
 .case .caseList .caseListContents__image.nanairo {
-  background: url(../data/caseImage02.png) no-repeat;
+  background: url(../data/caseImage02.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 .case .caseList .caseListContents__image.waiwai {
-  background: url(../data/caseImage03.png) no-repeat;
+  background: url(../data/caseImage03.jpg) no-repeat;
+  background-size: cover;
   background-position: top center;
 }
 .case .caseList .caseListContents__title {
@@ -337,6 +338,10 @@ body {
   border-radius: 50px;
   box-shadow: 0px 6px #55770C;
 }
+.case .caseList .caseListContents__button.waiwai {
+  background-color: rgb(161, 161, 161);
+  box-shadow: 0px 6px #7a7a7a;
+}
 
 .method {
   margin-top: 100px;
@@ -360,7 +365,7 @@ body {
 .footer .footerLogo {
   height: 80px;
   width: 400px;
-  margin-left: 32px;
+  margin-left: 64px;
   background: url(../data/noukaLogo.svg) no-repeat;
   background-size: contain;
 }
@@ -368,7 +373,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 32px;
+  margin-left: 64px;
 }
 .footer .footerText__contents {
   margin-top: 8px;

@@ -304,12 +304,13 @@ body{
         background-size: cover;
       }
       &__image.nanairo{
-        background:url(../data/caseImage02.png) no-repeat;
+        background:url(../data/caseImage02.jpg) no-repeat;
         background-size: cover;
         background-position: center;
       }
       &__image.waiwai{
-        background:url(../data/caseImage03.png) no-repeat;
+        background:url(../data/caseImage03.jpg) no-repeat;
+        background-size: cover;
         background-position: top center;
       }
       &__title{
@@ -335,6 +336,10 @@ body{
         margin-top: 16px;
         border-radius: 50px;
         box-shadow: 0px 6px #55770C;
+      }
+      &__button.waiwai{
+        background-color: rgb(161, 161, 161);
+        box-shadow: 0px 6px #7a7a7a;
       }
     }
   }
@@ -362,7 +367,7 @@ body{
   .footerLogo{
     height: 80px;
     width: 400px;
-    margin-left: 32px;
+    margin-left: 64px;
     background: url(../data/noukaLogo.svg) no-repeat;
     background-size: contain;
   }
@@ -370,7 +375,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 32px;
+    margin-left: 64px;
     &__contents{
       margin-top:8px;
     }
