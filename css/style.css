@@ -339,6 +339,9 @@ body {
   border-radius: 50px;
   box-shadow: 0px 6px #55770C;
 }
+.case .caseList .caseListContents__button span {
+  margin-left: 8px;
+}
 .case .caseList .caseListContents__button.waiwai {
   background-color: rgb(161, 161, 161);
   box-shadow: none;
@@ -360,7 +363,7 @@ body {
   display: flex;
   cursor: pointer;
   background-color: #f3f3f3;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.2s;
   border-radius: 5px;
   padding: 16px;
   align-items: center;
