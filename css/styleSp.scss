@@ -220,7 +220,12 @@ $colorBlack: #2A3038;
     width: 80vw;
     margin-left: 16px;
     background: url(../data/noukaLogo.svg) no-repeat;
+    background-position: left center;
     background-size: contain;
+  }
+  .footerText{
+    margin-top: 16px;
+    margin-left: 16px;
   }
 }
 }

@@ -210,6 +210,11 @@
     width: 80vw;
     margin-left: 16px;
     background: url(../data/noukaLogo.svg) no-repeat;
+    background-position: left center;
     background-size: contain;
+  }
+  .footer .footerText {
+    margin-top: 16px;
+    margin-left: 16px;
   }
 }/*# sourceMappingURL=styleSp.css.map */
