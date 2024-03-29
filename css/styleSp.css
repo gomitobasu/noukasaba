@@ -200,4 +200,16 @@
     border-radius: 80% 80% 0 0;
     background-color: white;
   }
+  .footer {
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerLogo {
+    height: 80px;
+    width: 80vw;
+    margin-left: 16px;
+    background: url(../data/noukaLogo.svg) no-repeat;
+    background-size: contain;
+  }
 }/*# sourceMappingURL=styleSp.css.map */
